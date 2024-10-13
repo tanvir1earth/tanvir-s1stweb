@@ -20,11 +20,11 @@
     </script>
     <style>
         .formstyle {
-            width: 300px;
-            height: 330px;
+            width: 220px;
+            height: 365px;
             margin: 20px auto;
             border: 3px solid gray;
-            border-radius: 5px;
+            border-radius: 20px;
             padding: 20px;
             text-align: center;
             background-color: gray;
@@ -32,7 +32,7 @@
 
 
         input:hover {
-            background-color: gray;
+            background-color: rgb(102, 230, 125);
         }
 
         * {
@@ -48,15 +48,19 @@
             cursor: pointer;
             background-color: black;
             color: white;
+            border-radius: 10px;
+
         }
 
-        /* It is used to display the numbers, operations and results. */
         .textview {
-            width: 223px;
+            height: 60px;
+            width: 205px;
             margin: 5px;
             font-size: 25px;
             padding: 5px;
             background-color: whitesmoke;
+            border-radius: 10px;
+
         }
         body{
             background-color: transparent
@@ -91,7 +95,7 @@
                     <td> <input class="btn" type="button" value="4" onclick="insert(4)"> </td>
                     <td> <input class="btn" type="button" value="5" onclick="insert(5)"> </td>
                     <td> <input class="btn" type="button" value="6" onclick="insert(6)"> </td>
-                    <td> <input class="btn" type="button" value=" ⌫" onclick="backspace()"> </td>
+                    <td> <input class="btn" type="button" value="⌫" onclick="backspace()"> </td>
                 </tr>
                 <tr>
                     <td> <input class="btn" type="button" value="1" onclick="insert(1)"> </td>
