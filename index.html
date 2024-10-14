@@ -79,22 +79,31 @@
             <marquee behavior="alternate" color="red">
                 <h1><b>wifi speed test</b></h1>
             </marquee>
-            </a>
-        </p>
-        <table border="1" align="left"><tr><td>
-            <dialog open>
-            <p>
-                <h7><b>WARNING!</b></h7>
-            </p>
-            <button class="l5" onclick="this.closest('dialog').close()">
-                &times;
-            </button>
-            </dialog>
-            <h1><b><details>
-                <summary>calculator</summary><iframe   border="0" 
-                scrolling="no" marginheight="0" marginwidth="0"
-                src="calc.html"></details>lol</iframe>
-            </details></b></h1></td></tr>
+        </a>
+    </p>
+    <table border="1" align="left">
+        <tr>
+            <td>
+                <marquee behavior="scrolling" direction="down" SCROLlamount="90">
+                    <dialog open>
+                    <p>
+                        <h7><b>WARNING!</b></h7>
+                    </p>
+                    <button class="l5" onclick="this.closest('dialog').close()">
+                        &times;
+                    </button>
+                    </dialog>
+                </marquee>
+                    <h1><b><details>
+                        <summary>
+                            calculator
+                        </summary>
+                        <iframe   border="0" scrolling="no" 
+                            marginheight="0" marginwidth="0"
+                            src="calc.html"></iframe>
+                    </details></b></h1>
+                </td>
+            </tr>
         </table>
         <hr/ color="black">
         <ul type="square">
@@ -203,8 +212,8 @@
         </select><br>
         <input type="radio"><input type="radio"><input type="radio">                                              <br>
         <input type="checkbox"><input type="checkbox"><input type="checkbox">                                     <br>
-        <input type="range"><br>
-        <meter id="meterResult" min="0" max="100" 
+        <input type="range"><br> 
+        <meter id="meterResult" min="0" max="100"  
          low="30" high="70" optimum="50"" value="0"></meter>                                                      <br>
         <input type="reset">
         <button>Sign in</button>
