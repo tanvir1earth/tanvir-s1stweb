@@ -38,7 +38,7 @@
         table {
             text-align: center;
             font-size: 36;
-            width: 100%                ;
+            width: 100%;
         }
 
         caption {
@@ -59,6 +59,21 @@
             border: 0;
             padding: 0;
         }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 76dvh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-color: transparent;
+            width: 100%;
+        }
+
+        #popup.open {
+            display: block;
+        }
+
         
     </style>
 </head>
@@ -118,7 +133,7 @@
     <hr / color="black">
     <ul type="square">
         <li><b>WATER</b> </li>
-        <li><kbd>WATER</kbd> </li>
+        <li><kbd>WATES</kbd> </li>
         <li><abbr title="WATER">WATER</abbr></li>
         <li><u>WATER</u> </li>
         <li><s>WATER</s> </li>
@@ -238,5 +253,23 @@
     <p>
     <h6><a href="#o">top</a></h6>
     </p>
+    <div id="popup">
+        <img src="water.GIF" >
+    </div>
+    <script>
+        const keysPressed = {};
+
+        document.addEventListener('keydown', function (event) {
+            keysPressed[event.key] = true;
+            if (keysPressed['a'] && keysPressed['w'] && keysPressed['t'] && keysPressed['e'] && keysPressed['s']) {
+                const popup = document.getElementById('popup');
+                popup.classList.toggle('open');
+            }
+        });
+
+        document.addEventListener('keyup', function (event) {
+            keysPressed[event.key] = false;
+        });
+    </script>
 </body>
 </html>
