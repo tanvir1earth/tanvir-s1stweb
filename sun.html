@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,14 +66,34 @@
     opacity: 1;
     transition: all 1s ease-in-out;
 }
+button {
+  background-color: transparent;
+  border: none;
+
+}
   </style>
 </head>
 
 <body>
   <div class="sun-link">
     <a href="">
-      <div class="sun"></div>
+      <button onclick="myFunction()">
+        <div class="sun">
+      </button>
+        <p id="demo"></p>
+      </div>
     </a>
   </div>
+        <script>
+          function myFunction() {
+            var txt;
+            if (confirm("Download")) {
+              txt = "Downloading...";
+            } else {
+              txt = "Cancelled!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+          }
+        </script>
 </body>
 </html>
